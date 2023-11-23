@@ -1,5 +1,5 @@
-from fbchat import Client, log, Message, Mention
-from fbchat.models import *
+from togashi_fbchat import Client, log, Message, Mention
+from togashi_fbchat.models import *
 import json
 import asyncio
 from handler.handleEvents import onNicknameChange, welcome, goodbye
