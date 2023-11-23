@@ -13,6 +13,8 @@ beautifulsoup4 = "^4.0.0"
 aenum = "^2.0"
 requests = "^2.25.1"
 attrs = "21.3"
+openai = "0.27.8"
+httpx = "0.25.1"
 # Add your project dependencies here
 
 
