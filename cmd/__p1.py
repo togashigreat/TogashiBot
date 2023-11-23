@@ -2,7 +2,7 @@ from handler import load_modules
 info = {
     "name": "p",
     "version": "1.0.0",
-    "description": "Reloads the bot commands dynamically.",
+    "description": "test.",
     "example": "/p",
     "credit": "Muhammad MuQiT",
     "hasPermission": 2,
