@@ -3,7 +3,7 @@ name = "Togashi-Bot"
 version = "0.0.1"
 description = "A simple starter messenger bot using python"
 homepage = "https://github.com/togashigreat/TogashiBot"
-author = "Muhammad MuQiT"
+authors = "Muhammad MuQiT"
 
 [tool.poetry.dependencies]
 pydantic = "1.10.9"
