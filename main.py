@@ -6,8 +6,6 @@ from handle.handleEvents import onNicknameChange, welcome, goodbye
 from utily.utils import getCookie
 
 
-session_cookies = getCookie("fbstate.json")
-print(session_cookies)
 BOT = f"\x1B[1;38;5;210m[ Togashi ]->\x1B[0m"
 print(
     """
@@ -133,6 +131,7 @@ class togashi(Client):
         )
 
 if __name__ == "__main__":
+    session_cookies = getCookie("fbstate.json")
     bot_togashi = togashi("", "", session_cookies=session_cookies)
     if bot_togashi.isLoggedIn():
         ownInfo = bot_togashi.fetchUserInfo(bot_togashi.uid)[bot_togashi.uid]
