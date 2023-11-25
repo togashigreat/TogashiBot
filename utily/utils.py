@@ -2,7 +2,7 @@ import json
 import httpx
 from bs4 import BeautifulSoup
 from urllib.parse import urlparse, parse_qs
-
+from data import botInfo
 """ BAN USER/THREAD ID """
 def ban(file_path: str, user_id: str):
     try:
@@ -37,14 +37,18 @@ def unban(file_path: str, user_id: str):
     else:
         print(f"Thread ID {user_id} not found in the JSON file.")
 def getCookie(file_path):
-    with open(file_path, "r") as f:
-        data = json.load(f)
-    cookies = {}
-    need_cookie = ["c_user", "datr", "sb", "fr", "xs"]
-    for cookie in data:
-        if cookie.get("name") in need_cookie:
-            cookies[cookie["name"]] = cookie["value"]
-    return cookies
+    print(f"{botInfo.BOT}x1b[1;38;5;160mloading cookies.....")
+    try:
+        with open(file_path, "r") as f:
+            data = json.load(f)
+            cookies = {}
+            need_cookie = ["c_user", "datr", "sb", "fr", "xs"]
+            for cookie in data:
+                if cookie.get("name") in need_cookie:
+                    cookies[cookie["name"]] = cookie["value"]
+            return cookies
+    except ValueError:
+        print(f"{botInfo.BOT}x1b[1;38;5mfailed to load cookies! please check fbstate.json")
 
 
 """ FIND USER ID """
