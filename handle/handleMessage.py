@@ -28,7 +28,7 @@ def getBanReason():
 
 def NoPrefixMessage():
     pass
-print(f"{botInfo.BOT} loading message handler......")
+print(f"{botInfo.BOT} \x1b[1;0mloading message handler......\x1b[0m")
 
 def handleMessage(
     api, mid, message, message_object, author_id, thread_id, thread_type, msg, ts
