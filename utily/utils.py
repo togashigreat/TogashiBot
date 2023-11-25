@@ -37,7 +37,7 @@ def unban(file_path: str, user_id: str):
     else:
         print(f"Thread ID {user_id} not found in the JSON file.")
 def getCookie(file_path):
-    print(f"{botInfo.BOT}x1b[1;38;5;160mloading cookies.....")
+    print(f"{botInfo.BOT}\x1b[1;38;5;160mloading cookies.....\x1b[0m")
     try:
         with open(file_path, "r") as f:
             data = json.load(f)
@@ -48,7 +48,7 @@ def getCookie(file_path):
                     cookies[cookie["name"]] = cookie["value"]
             return cookies
     except ValueError:
-        print(f"{botInfo.BOT}x1b[1;38;5mfailed to load cookies! please check fbstate.json")
+        print(f"{botInfo.BOT}\x1b[1;38;5mfailed to load cookies! please check fbstate.json\x1b[0m")
 
 
 """ FIND USER ID """
