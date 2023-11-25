@@ -1,4 +1,4 @@
-from handler.load_modules import *
+from handle.load_modules import *
 
 info = {
     "name": "reload",
