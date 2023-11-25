@@ -2,7 +2,7 @@ from togashi_fbchat import Client, log, Message, Mention
 from togashi_fbchat.models import *
 import json
 import asyncio
-from handler.handleEvents import onNicknameChange, welcome, goodbye
+from handle.handleEvents import onNicknameChange, welcome, goodbye
 from utily.utils import getCookie
 
 
@@ -23,7 +23,7 @@ with open("./config.json", "r") as f:
     prefix = json.load(f)["PREFIX"]
     print(f"{BOT} \x1B[1;92mPrefix Loadded Succesfully!\x1B[0m")
 
-from handler.handleMessage import handleMessage
+from handle.handleMessage import handleMessage
 class togashi(Client):
     prefix = prefix
 
