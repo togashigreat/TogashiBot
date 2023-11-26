@@ -25,7 +25,7 @@ async def removeuser(api, msg, message_object, threadID, thread_type, **kwargs):
             except FBchatException as e:
                 print(f"{botInfo.BOT} {e}")
                 api.sendMessage("Cant remove the user from the group", thread_id=threadID, thread_type=thread_type)
-        elif not len(message_object.mentions[0].thread_id):
+        elif len(message_object.mentions[0].thread_id):
             try:
                 user_id = message_object.mentions[0].thread_id
                 api.removeUserFromGroup(user_id, threadID)
