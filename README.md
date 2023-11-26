@@ -1,4 +1,4 @@
-<center> # TogashiBot </center>
+# TogashiBot
 A simple messenger Bot using Python fbchat api.
 ## Usage
 First, git clone this repo and then run
