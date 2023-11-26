@@ -30,6 +30,7 @@ async def sayhi(api, message_object, threadID, thread_type, author_id, **kwargs)
     #passing it as the 4th argument will mention the member
 ````
 To access everything like the message sender ID, threadID, bot id, the message context etc. you can access these easily
+
 `api` = same as how you use in mirai
 
 `message` = the message sent by the command user
@@ -93,6 +94,6 @@ to reply a message use:
 `api.reply("Hellow", message_object, threadID, thread_type)`
 
 if you want to mention someone add the `author_id` after thread_id in api.reply
-
+Get bot uid by using `api.uid`
 **Its just the test version of TogashiBot. I'm re modeling it to make it more object oriented than functional.**
 
