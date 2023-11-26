@@ -33,4 +33,4 @@ async def removeuser(api, msg, message_object, threadID, thread_type, **kwargs):
                 print(f"{botInfo.BOT} {e}")
                 api.sendMessage("Cant remove user", threadID, thread_type)
     else:
-        api.sendMessage("⚠️ Only group admins can remove members. Bot isn't a group admin yet")
+        api.sendMessage("⚠️ Only group admins can remove members. Bot isn't a group admin yet", threadID, thread_type)
