@@ -4,7 +4,7 @@ A simple messenger Bot using Python fbchat api.
 First, git clone this repo and then run
 
 ```bash
-git clone https://github.com/togashigreat/TogashiBot.git && cp -r TogashiBot/.. && rm -rf TogashiBot
+git clone https://github.com/togashigreat/TogashiBot.git && cp -r TogashiBot/ .. && rm -rf TogashiBot
 ```
 
 **Install the requirements using poetry**
