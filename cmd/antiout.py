@@ -30,7 +30,7 @@ async def antiout(api, msg, threadID, thread_type, **kwargs):
     if msg[0] == "on" and not data["ANTIOUT"]:
         data["ANTIOUT"] = True
         save_config(data)
-        api.sendMessage("🔒 Antiout feature is turned ON✅️")
+        api.sendMessage("🔒 Antiout feature is turned ON✅️", threadID, thread_type)
     elif msg[0] == "off" and data["ANTIOUT"]:
         data["ANTIOUT"] = False
         save_config(data)
