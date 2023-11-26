@@ -11,12 +11,12 @@ info = {
 
 
 async def user_ban(api, userID, threadID, thread_type):
-    ban("",userID)
+    ban("./cmd/data/BannedUser.json",userID)
     return api.sendMessage("Banned user succesfully", threadID, thread_type)
 
 
 async def user_unban(api, userID, threadID, thread_type):
-    unban("",userID)
+    unban("./cmd/data/BannedUser.json",userID)
     return api.sendMessage("Unbanned user succesfully", threadID, thread_type)
 
 
