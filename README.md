@@ -62,7 +62,7 @@ To access everything like the message sender ID, threadID, bot id, the message c
 
 
 Add a Info dictionary
-
+```
 info = {
 
 "name": "command name"
@@ -77,7 +77,7 @@ info = {
 
 "cooldown": "no functionality added for cooldown yet"
 }
-
+```
 dictionary as well which is called object in Javascript.
 you can look at the other command files to see how the commands are made.
 
