@@ -17,12 +17,12 @@ poetry install
 python install -r requirements.txt
 ```
 
-Use c3c fbstate or cookie editor to get your facebook account fbstate and put it in fbstate.json
-now, you can start using it by running
+Use c3c fbstate or cookie-editor or developer tools to get your facebook account cookies and put it in fbstate.json
+now, you can start using the bot it by running
 
 
 ```bash
-python3 main.py
+python main.py
 ```
 
 The bot will be updated It's just the test version.
