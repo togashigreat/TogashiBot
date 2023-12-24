@@ -12,6 +12,10 @@ git clone https://github.com/togashigreat/TogashiBot.git && cp -r TogashiBot/. .
 ```bash
 poetry install
 ```
+**or**
+```bash
+python install -r requirements.txt
+```
 
 Use c3c fbstate or cookie editor to get your facebook account fbstate and put it in fbstate.json
 now, you can start using it by running
