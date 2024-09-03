@@ -4,7 +4,7 @@ A simple messenger Bot using Python fbchat api.
 First, git clone this repo
 
 ```bash
-git clone https://github.com/togashigreat/TogashiBot.git && cp -r TogashiBot/. . && rm -rf TogashiBot
+git clone https://github.com/togashigreat/TogashiBot.git
 ```
 
 **Install the requirements using poetry**
@@ -14,7 +14,7 @@ poetry install
 ```
 **or**
 ```bash
-python install -r requirements.txt
+pip3 install -r requirements.txt
 ```
 
 Use c3c fbstate or cookie-editor or developer tools to get your facebook account cookies and put it in fbstate.json
@@ -22,7 +22,7 @@ now, you can start using the bot it by running
 
 
 ```bash
-python main.py
+python3 main.py
 ```
 
 The bot will be updated It's just the test version.
