@@ -4,7 +4,7 @@ version = "0.0.1"
 description = "A simple starter messenger bot using python"
 homepage = "https://github.com/togashigreat"
 authors = ["Muhammad MuQiT"]
-packages = [{include = "TogashiBot", from="."}]
+packages = [{include = "."}]
 # You can add classifiers to describe the project if you like
 classifiers = [
     "Programming Language :: Python :: 3",
