@@ -4,6 +4,12 @@ version = "0.0.1"
 description = "A simple starter messenger bot using python"
 homepage = "https://github.com/togashigreat"
 authors = ["Muhammad MuQiT"]
+# You can add classifiers to describe the project if you like
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
 
 [tool.poetry.dependencies]
 python = "^3.9"
@@ -15,10 +21,11 @@ requests = "^2.25.1"
 attrs = "21.3"
 openai = "1.3.5"
 httpx = "0.25.1"
-# Add your project dependencies here
 
+[tool.poetry.packages]
+# Define where your code lives. Assuming the Python module is in a folder named "togashibot"
+packages = [{ include = "togashibot" }]
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
-
