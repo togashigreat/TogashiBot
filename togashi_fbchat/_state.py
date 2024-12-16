@@ -26,11 +26,19 @@ def find_input_fields(html):
 
 def session_factory(user_agent=None):
     session = requests.session()
-    session.headers["Referer"] = "https://www.facebook.com"
-    session.headers["Accept"] = "text/html"
-
-    # TODO: Deprecate setting the user agent manually
-    session.headers["User-Agent"] = user_agent or random.choice(_util.USER_AGENTS)
+    session.headers = {
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Referer": "https://www.facebook.com/",
+        "Host": "www.facebook.com",
+        "Origin": "https://www.facebook.com",
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
+        "Connection": "keep-alive",
+        "Sec-Fetch-Site": "same-origin",
+        "Sec-Fetch-User": "?1",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+        "Accept-Encoding": "gzip", #, deflate, br",
+        "Accept-Language": "en-US,en;q=0.9"
+    }
     return session
 
 
